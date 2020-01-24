@@ -1,3 +1,59 @@
 body {
     background-color: white;
 }
+.title {
+    display: flex;
+    justify-content: center;
+}
+
+.cards {
+    border: 2px gray solid;
+    border-radius: 4px;
+    flex: 0 0 33%;
+    margin-top: 5px;
+    margin-left: 2px;
+    margin-right: 2px;
+    background-color: #FFFFFF;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.color{
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+.specialskills{
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+.typeofpet {
+    display: flex;
+    align-self: flex-end;
+}
+
+.cards h2 {
+    border: 1px;
+    border-style: solid;
+    border-color: black;
+    background-color: gray;
+    text-align: center;
+    display: block;
+}
+.center {
+    border: solid 1px gray;
+    border-radius: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 35%;
+    width: 80%;
+  } 
+
+#pet-adoption {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
