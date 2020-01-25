@@ -1,9 +1,17 @@
 body {
     background-color: white;
+    font-family: 'Nunito', sans-serif;
 }
 .title {
     display: flex;
     justify-content: center;
+    font-family: 'Nunito', sans-serif;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
 }
 
 .cards {
@@ -15,23 +23,18 @@ body {
     margin-right: 2px;
     background-color: #FFFFFF;
     color: black;
-    font-family: 'Montserrat', sans-serif;
-
+    font-family: 'Nunito', sans-serif;
 }
-.color{
-    font-family: 'Montserrat', sans-serif;
+.color {
+    font-family: 'Nunito', sans-serif;
     display: flex;
     justify-content: center;
 }
 
-.specialskills{
-    font-family: 'Montserrat', sans-serif;
+.specialskills {
+    font-family: 'Nunito', sans-serif;
     display: flex;
     justify-content: center;
-}
-.typeofpet {
-    display: flex;
-    align-self: flex-end;
 }
 
 .cards h2 {
@@ -41,6 +44,7 @@ body {
     background-color: gray;
     text-align: center;
     display: block;
+    font-family: 'Nunito', sans-serif;
 }
 .center {
     border: solid 1px gray;
@@ -56,4 +60,35 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+}
+.cards img {
+    height: 166px;
+    width: 200px;
+}
+.dog {
+    background-color: lightseagreen;
+    border: lightseagreen 10px solid;
+    color: aqua;
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
+    font-family: 'Nunito', sans-serif;
+}
+.dinosaur {
+    background-color: mediumseagreen;
+    border: mediumseagreen 10px solid;
+    color:darkgreen;
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
+    font-family: 'Nunito', sans-serif;
+}
+.cat {
+    background-color: darkgoldenrod;
+    border: darkgoldenrod 10px solid;
+    color: yellow;
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
+    font-family: 'Nunito', sans-serif;
 }
