@@ -52,7 +52,7 @@ const buildPetCards = () => {
     
     switch (pets[i].typeOfPet) {
             case "Dog":  
-                domString += `<footer class="dog">${pets[i].typeOfPet}</footer>`;
+                domString += `<footer class="dog"> ${pets[i].typeOfPet}</footer>`;
             break;
             case "Cat":
                 domString += `<footer class="cat">${pets[i].typeOfPet}</footer>`;
