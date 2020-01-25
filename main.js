@@ -67,3 +67,8 @@ printToDom('pet-adoption', domString);
 };
 
 buildPetCards();
+
+const buttonElement = document.getElementById('button')
+const filterType
+buttonElement.addEventListener('click', filterType (event) {
+    alert('Element clicked through function!');
