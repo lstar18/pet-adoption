@@ -1,6 +1,7 @@
 body {
-    background-color: white;
     font-family: 'Nunito', sans-serif;
+    background: rgb(255,254,254);
+background: linear-gradient(0deg, rgba(255,254,254,0.8832575266434699) 5%, rgba(141,137,137,1) 100%);
 }
 .title {
     display: flex;
@@ -16,8 +17,9 @@ body {
 
 .cards {
     border: 2px gray solid;
+    box-shadow: 6px 5px 5px 0px gray;
     border-radius: 4px;
-    flex: 0 0 33%;
+    flex: 0 0 25%;
     margin-top: 5px;
     margin-left: 2px;
     margin-right: 2px;
@@ -40,7 +42,7 @@ body {
 .cards h2 {
     border: 1px;
     border-style: solid;
-    border-color: black;
+    border-color: lightslategray;
     background-color: gray;
     text-align: center;
     display: block;

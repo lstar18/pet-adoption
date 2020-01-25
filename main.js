@@ -47,8 +47,8 @@ const buildPetCards = () => {
         domString += `<div class="cards">`;
         domString += `<h2 class="name"> ${pets[i].name}</h2>`;
         domString += `<img src="${pets[i].image}" alt="A picture of a ${pets[i].typeOfPet}" class="center">`;
-        domString += `<p class="color"> <strong>Color:</strong> ${pets[i].color}</p>`;
-        domString += `<p class="specialskills"> <strong> Skills:</strong> ${pets[i].specialSkill}</p>`;
+        domString += `<p class="color"> <strong>Color</strong>:    ${pets[i].color}</p>`;
+        domString += `<p class="specialskills"><strong>Skills</strong>:     ${pets[i].specialSkill}</p>`;
     
     switch (pets[i].typeOfPet) {
             case "Dog":  
