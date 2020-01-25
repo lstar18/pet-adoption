@@ -18,13 +18,13 @@ background: linear-gradient(0deg, rgba(255,254,254,0.8832575266434699) 5%, rgba(
 .cards {
     border: 2px gray solid;
     box-shadow: 6px 5px 5px 0px gray;
-    border-radius: 4px;
+    border-radius: 10px;
     flex: 0 0 25%;
     margin-top: 5px;
     margin-left: 2px;
     margin-right: 2px;
-    background-color: #FFFFFF;
-    color: black;
+    background-color:black;
+    color: white;
     font-family: 'Nunito', sans-serif;
 }
 .color {
@@ -43,6 +43,7 @@ background: linear-gradient(0deg, rgba(255,254,254,0.8832575266434699) 5%, rgba(
     border: 1px;
     border-style: solid;
     border-color: lightslategray;
+    border-radius: 1px;
     background-color: gray;
     text-align: center;
     display: block;
@@ -70,6 +71,7 @@ background: linear-gradient(0deg, rgba(255,254,254,0.8832575266434699) 5%, rgba(
 .dog {
     background-color: lightseagreen;
     border: lightseagreen 10px solid;
+    border-radius: 2px;
     color: aqua;
     display: flex;
     justify-content: center;
@@ -79,6 +81,7 @@ background: linear-gradient(0deg, rgba(255,254,254,0.8832575266434699) 5%, rgba(
 .dinosaur {
     background-color: mediumseagreen;
     border: mediumseagreen 10px solid;
+    border-radius: 2px;
     color:darkgreen;
     display: flex;
     justify-content: center;
@@ -88,9 +91,22 @@ background: linear-gradient(0deg, rgba(255,254,254,0.8832575266434699) 5%, rgba(
 .cat {
     background-color: darkgoldenrod;
     border: darkgoldenrod 10px solid;
+    border-radius: 2px;
     color: yellow;
     display: flex;
     justify-content: center;
     align-self: flex-end;
     font-family: 'Nunito', sans-serif;
 }
+.all {
+    background-color: black;
+    border: white 10px solid;
+    border-radius: 2px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
+    font-family: 'Nunito', sans-serif;
+}
+
+
