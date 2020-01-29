@@ -9,7 +9,7 @@ background: linear-gradient(0deg, rgba(255,254,254,0.8832575266434699) 5%, rgba(
     font-family: 'Nunito', sans-serif;
 }
 
-.nav {
+.buttonId {
     display: flex;
     justify-content: center;
     padding: 5px;

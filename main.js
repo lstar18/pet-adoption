@@ -41,24 +41,24 @@ const selectedDiv = document.getElementById(divId);
 selectedDiv.innerHTML = textToPrint;
 };
 
-const buildPetCards = () => {
+const buildPetCards = (anyArray) => {
     let domString = '';
-    for(let i= 0; i <pets.length; i++) {
+    for(let i= 0; i < anyArray.length; i++) {
         domString += `<div class="cards">`;
-        domString += `<h2 class="name"> ${pets[i].name}</h2>`;
-        domString += `<img src="${pets[i].image}" alt="A picture of a ${pets[i].typeOfPet}" class="center">`;
-        domString += `<p class="color"> <strong>Color</strong>:    ${pets[i].color}</p>`;
-        domString += `<p class="specialskills"><strong>Skills</strong>:     ${pets[i].specialSkill}</p>`;
+        domString += `<h2 class="name"> ${anyArray[i].name}</h2>`;
+        domString += `<img src="${anyArray[i].image}" alt="A picture of a ${anyArray[i].typeOfPet}" class="center">`;
+        domString += `<p class="color"> <strong>Color</strong>:    ${anyArray[i].color}</p>`;
+        domString += `<p class="specialskills"><strong>Skills</strong>:     ${anyArray[i].specialSkill}</p>`;
     
-    switch (pets[i].typeOfPet) {
+    switch (anyArray[i].typeOfPet) {
             case "Dog":  
-                domString += `<footer class="dog">${pets[i].typeOfPet}</footer>`;
+                domString += `<footer class="dog">${anyArray[i].typeOfPet}</footer>`;
             break;
             case "Cat":
-                domString += `<footer class="cat">${pets[i].typeOfPet}</footer>`;
+                domString += `<footer class="cat">${anyArray[i].typeOfPet}</footer>`;
             break;
             case "Dinosaur": 
-                domString += `<footer class="dinosaur">${pets[i].typeOfPet}</footer>`;
+                domString += `<footer class="dinosaur">${anyArray[i].typeOfPet}</footer>`;
             break;
         }
     domString += `</div>`;
@@ -67,8 +67,29 @@ printToDom('pet-adoption', domString);
 };
 
 buildPetCards();
-
-const buttonElement = document.getElementById('button')
-const filterType
-buttonElement.addEventListener('click', filterType (event) {
-    alert('Element clicked through function!');
+const findMyPets = (e) => {
+    const buttonId = e.target.id
+    if(buttonId === 'All') {
+        buildPetCards(pets);
+    } else {
+    const myPets = [];
+    for(let i= 0; i <pets.length; i++) {
+     if (pets[i].typeOfPet === buttonId) {
+        myPets.push(pets[i]);
+    
+}
+    }
+    buildPetCards(myPets); 
+    }
+};
+const events = () => {
+    document.getElementById('Dog').addEventListener('click', findMyPets);
+    document.getElementById('Cat').addEventListener('click', findMyPets);
+    document.getElementById('Dinosaur').addEventListener('click', findMyPets);
+    document.getElementById('All').addEventListener('click', findMyPets);    
+    }
+const init = () => {
+buildPetCards(pets);
+events();
+}
+init ();
