@@ -62,11 +62,12 @@ const buildPetCards = (anyArray) => {
             break;
         }
     domString += `</div>`;
-    }
+    
 printToDom('pet-adoption', domString);
+    };
 };
 
-buildPetCards();
+
 const findMyPets = (e) => {
     const buttonId = e.target.id
     if(buttonId === 'All') {
